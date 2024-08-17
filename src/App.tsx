@@ -2,7 +2,7 @@
 // import logo from './logo.svg';
 // import './App.css';
 
-import { appendFile } from "fs";
+// import { appendFile } from "fs";
 
 // function App() {
 //   return (
@@ -28,12 +28,12 @@ import { appendFile } from "fs";
 // export default App;
 
 import './App.css'
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/NavBar";
 
 const ArtWall = () => {
   return (
 
-    <div className="components">
+    <div className="App">
       <NavBar/>
     </div>
   );

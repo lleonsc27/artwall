@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './styles.css';
+import './NavBar.css';
 import ArtWallLogo from './ArtWallLogo.svg';
 
 const NavBar: React.FC = () => {
