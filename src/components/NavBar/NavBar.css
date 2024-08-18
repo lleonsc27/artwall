@@ -18,7 +18,7 @@ a {
 
 .header {
     width: 100%;
-    background-color: #c58af2;
+    background-color: #ffffff;
     display: flex;
     height: 80px;
     padding: 0 24px;
@@ -114,7 +114,7 @@ a {
 
 @media screen and (min-width: 1024px) {
     .header {
-        background-color: #38b659;
+        background-color: #ffffff;
         display: flex;
         height: 80px;
         padding: 0 32px;
