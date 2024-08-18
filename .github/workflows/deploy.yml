@@ -1,0 +1,25 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master  # Ou o nome da sua branch principal
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build project
+      run: npm run build
+
+    - name: Deploy to GitHub Pages
+      env:
+        GH_TOKEN: ${{ secrets.MY_DEPLOY_TOKEN }}
+      run: |
+        git config user.name "Leonardo Cunha"
+        git config user.email "lleon.sc27@gmail.com"
+        npx gh-pages -d build -m "Deploying to GitHub Pages" --token $GH_TOKEN
