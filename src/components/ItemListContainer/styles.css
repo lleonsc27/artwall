@@ -9,15 +9,15 @@
 
 .greetings {
     font-family: "Inknut Antiqua";
-    font-weight: 100;
+    font-weight: 00;
     font-size: 56px;
 }
 
 .loading {
-    width: 40vh;
+    width: 200px;
     height: 4px;
     background: linear-gradient(90deg, #afb187, #9B5E08, #afb187);
-    background-size: 600% 100%;
+    background-size: 800% 100%;
     animation: gradientMotion 1.2s ease infinite;
 }
 
