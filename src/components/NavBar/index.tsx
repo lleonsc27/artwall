@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import './NavBar.css';
+import './styles.css';
 import ArtWallLogo from './ArtWallLogo.svg';
+// import CartWidget from '../CartWidget'
+import { ReactComponent as Cart } from '../CartWidget/ShoppingBag.svg';
 
 const NavBar: React.FC = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -29,9 +31,11 @@ const NavBar: React.FC = () => {
                     <li><a className='item-menu' href="#contato">Contato</a></li>
                 </ul>
             </nav>
+
+            <Cart className='cart'/>
+
         </header>
     )
-
 }
 
 export default NavBar
