@@ -1,10 +1,8 @@
-import ShoppingBag from './ShoppingBag.svg';
-import './styles.css';
+import ShoppingBag from "./ShoppingBag.svg";
+import "./styles.css";
 
 const Cart = () => {
-    return (
-        <ShoppingBag/>
-    )
-}
+  return <ShoppingBag />;
+};
 
-export default Cart
+export default Cart;

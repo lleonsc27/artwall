@@ -1,11 +1,12 @@
-import './App.css'
-import NavBar from './components/NavBar';
+import "./App.css";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
 
 const ArtWall = () => {
   return (
-
     <div className="App">
-      <NavBar/>
+      <NavBar />
+      <ItemListContainer greetings="Olá!" />
     </div>
   );
 };
