@@ -1,34 +1,24 @@
 import "./styles.css";
+import ItemCount from "../ItemCount";
+import UrbanSymphony from "../../images/UrbanSymphony.webp";
 
-interface Props {
-  greetings: string;
-}
-
-const ItemListContainer = ({ greetings }: Props) => {
+const ItemListContainer = () => {
   return (
     <div className="body">
-      <h1 className="greetings">{greetings}</h1>
-      <div className="loading"></div>
+      <div className="item">
+        <div className="item-img">
+          <img src={UrbanSymphony} alt="" />
+        </div>
+        <div className="item-name">Urban Symphony</div>
+        <div className="item-price-actions">
+          <div className="item-price">R$79,90</div>
+          <div className="item-actions">
+            <ItemCount />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default ItemListContainer;
-
-// React.FunctionComponent
-
-// import './styles.css';
-
-// interface Props {
-//     greetings: string;
-// }
-
-// const ItemListContainer: React.FC<Props> = ({ greetings }) => {
-//     return (
-//         <div className='body'>
-//             <h1>{greetings}</h1>
-//         </div>
-//     );
-// }
-
-// export default ItemListContainer;

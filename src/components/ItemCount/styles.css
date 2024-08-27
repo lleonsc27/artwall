@@ -1,0 +1,72 @@
+.actions {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    font-size: 24px;
+    color: #673f05;
+    background-color: #f4f5dd;
+}
+
+.button:hover {
+    background-color: #e9ead7;
+}
+
+.button:disabled {
+    color: #afb187;
+}
+
+.buttonAdd {
+    display: flex;
+    order: 2;
+    align-self: center;
+}
+
+.buttonSubtract {
+    display: flex;
+    order: 0;
+}
+
+.itemsInCart {
+    display: flex;
+    justify-content: center;
+    order: 1;
+    color: #252525;
+    text-align: center;
+    font-family: "Oxygen";
+    font-size: 14px;
+    width: 32px;
+}
+
+.stock {
+    display: flex;
+    order: 3;
+    color: #252525;
+    text-align: center;
+    font-family: "Oxygen";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: normal;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.add-cart {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    width: 96px;
+    height: 32px;
+    background-color: #e9ead7;
+}
