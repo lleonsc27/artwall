@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/artwall/static/css/main.b483e806.css",
-    "main.js": "/artwall/static/js/main.733d8975.js",
+    "main.css": "/artwall/static/css/main.e565c853.css",
+    "main.js": "/artwall/static/js/main.42347330.js",
     "static/js/453.8e8ec00c.chunk.js": "/artwall/static/js/453.8e8ec00c.chunk.js",
+    "static/media/UrbanSymphony.webp": "/artwall/static/media/UrbanSymphony.3f530f64d7dbbe6fc69d.webp",
     "static/media/ArtWallLogo.svg": "/artwall/static/media/ArtWallLogo.e04bc25afd74e92860eb37d9e0d2abef.svg",
     "static/media/ShoppingBag.svg": "/artwall/static/media/ShoppingBag.b2bb948aea5043790dd975637e6552cd.svg",
     "index.html": "/artwall/index.html",
-    "main.b483e806.css.map": "/artwall/static/css/main.b483e806.css.map",
-    "main.733d8975.js.map": "/artwall/static/js/main.733d8975.js.map",
+    "main.e565c853.css.map": "/artwall/static/css/main.e565c853.css.map",
+    "main.42347330.js.map": "/artwall/static/js/main.42347330.js.map",
     "453.8e8ec00c.chunk.js.map": "/artwall/static/js/453.8e8ec00c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b483e806.css",
-    "static/js/main.733d8975.js"
+    "static/css/main.e565c853.css",
+    "static/js/main.42347330.js"
   ]
 }
