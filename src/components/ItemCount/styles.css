@@ -21,7 +21,8 @@
 }
 
 .button:disabled {
-    color: #afb187;
+    /* color: #afb187; */
+    color: #ff00ae;
 }
 
 .buttonAdd {
