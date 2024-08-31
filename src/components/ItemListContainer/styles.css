@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
-
-.body {
+.item-list-container-box {
     height: 100%;
     background-color: #F4F5DD;
     display: flex;
@@ -9,7 +7,7 @@
     align-items: center;
 }
 
-.greetings {
+/* .greetings {
     font-family: "Inknut Antiqua";
     font-weight: 100;
     font-size: 40px;
@@ -36,76 +34,4 @@
     100% {
         background-position: 0% 0%;
     }
-}
-
-.item {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #d1d2b2;
-    border: 1px black;
-    border-radius: 8px;
-    width: 200px;
-    min-height: 312px;
-    padding: 8px;
-
-}
-
-.item-img {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    background-color: #afb187;
-    border: 1px black;
-    border-radius: 8px;
-    width: 200px;
-    height: 200px;
-}
-
-.item-img img {
-    width: 100%;
-    height: 100%;
-    border-radius: 8px;
-}
-
-
-.item-name {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: center;
-    align-items: center;
-    align-self: flex-start;
-    font-family: "Oxygen";
-    font-weight: normal;
-    font-size: medium;
-}
-
-.item-price-actions {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: auto;
-}
-
-.item-price {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
-    /* align-items: ; */
-    font-family: "Oxygen";
-    font-weight: bold;
-    font-size: small;
-    height: 100%;
-    padding-top: 8px;
-}
-
-.item-actions {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: auto;
-}
+} */

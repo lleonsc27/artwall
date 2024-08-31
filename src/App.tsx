@@ -1,15 +1,12 @@
 import "./App.css";
-import Aula05 from "./components/Aula05";
-import ItemCount from "./components/ItemCount";
-import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
+import ItemListContainer from "./components/ItemListContainer";
 
 const ArtWall = () => {
   return (
-    <div className="App">
+    <div className="app-box">
       <NavBar />
       <ItemListContainer />
-      <Aula05 />
     </div>
   );
 };
