@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/artwall/static/css/main.6f190ff5.css",
-    "main.js": "/artwall/static/js/main.42347330.js",
+    "main.css": "/artwall/static/css/main.a5fd6bc4.css",
+    "main.js": "/artwall/static/js/main.221c85d8.js",
     "static/js/453.8e8ec00c.chunk.js": "/artwall/static/js/453.8e8ec00c.chunk.js",
-    "static/media/UrbanSymphony.webp": "/artwall/static/media/UrbanSymphony.3f530f64d7dbbe6fc69d.webp",
     "static/media/ArtWallLogo.svg": "/artwall/static/media/ArtWallLogo.e04bc25afd74e92860eb37d9e0d2abef.svg",
     "static/media/ShoppingBag.svg": "/artwall/static/media/ShoppingBag.b2bb948aea5043790dd975637e6552cd.svg",
     "index.html": "/artwall/index.html",
-    "main.6f190ff5.css.map": "/artwall/static/css/main.6f190ff5.css.map",
-    "main.42347330.js.map": "/artwall/static/js/main.42347330.js.map",
+    "main.a5fd6bc4.css.map": "/artwall/static/css/main.a5fd6bc4.css.map",
+    "main.221c85d8.js.map": "/artwall/static/js/main.221c85d8.js.map",
     "453.8e8ec00c.chunk.js.map": "/artwall/static/js/453.8e8ec00c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f190ff5.css",
-    "static/js/main.42347330.js"
+    "static/css/main.a5fd6bc4.css",
+    "static/js/main.221c85d8.js"
   ]
 }
