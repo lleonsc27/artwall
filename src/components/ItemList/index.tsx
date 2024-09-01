@@ -1,9 +1,10 @@
+import Item from "../Item";
 import "./styles.css";
 
 const ItemList = () => {
   return (
     <div className="item-list-box">
-      <h1>hello</h1>
+      <Item/>
     </div>
   );
 };

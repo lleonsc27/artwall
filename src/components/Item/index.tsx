@@ -13,7 +13,19 @@ const Item = () => {
         <div className="item-price-actions">
           <div className="item-price">R$79,90</div>
           <div className="item-actions">
-            <ItemCount />
+            <ItemCount initialStock={30}/>
+          </div>
+        </div>
+      </div>
+      <div className="item">
+        <div className="item-img">
+          <img src={UrbanSymphony} alt="" />
+        </div>
+        <div className="item-name">Urban Symphony</div>
+        <div className="item-price-actions">
+          <div className="item-price">R$79,90</div>
+          <div className="item-actions">
+            <ItemCount initialStock={20}/>
           </div>
         </div>
       </div>
