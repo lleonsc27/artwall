@@ -1,6 +1,6 @@
-import "./styles.css";
-import ItemCount from "../ItemCount";
-import UrbanSymphony from "../../images/UrbanSymphony.webp";
+import "../assets/styles/item.css";
+import ItemCount from "./ItemCount";
+import UrbanSymphony from "../assets/images/urban-symphony.webp";
 
 const Item = () => {
   return (

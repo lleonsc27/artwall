@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./styles.css";
+import "../assets/styles/itemCount.css";
 
 interface ItemCountProps {
   initialStock: number;

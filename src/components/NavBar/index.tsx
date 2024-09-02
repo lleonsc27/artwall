@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import "./styles.css";
-import ArtWallLogo from "./ArtWallLogo.svg";
-import { ReactComponent as CartIcon } from "./CartWidget/ShoppingBag.svg";
+import "../../assets/styles/navBar.css";
+import ArtWallLogo from "../../assets/images/artwall-logo.svg";
+import { ReactComponent as CartIcon } from "../../assets/images/shopping-bag-icon.svg";
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

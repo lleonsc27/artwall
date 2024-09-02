@@ -1,5 +1,5 @@
 import ShoppingBag from "./ShoppingBag.svg";
-import "./styles.css";
+import "../../assets/styles/cartWidget.css";
 
 const Cart = () => {
   return <ShoppingBag />;

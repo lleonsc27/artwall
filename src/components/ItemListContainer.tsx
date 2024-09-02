@@ -1,5 +1,5 @@
-import "./styles.css";
-import ItemList from "../ItemList";
+import "../assets/styles/itemListContainer.css";
+import ItemList from "./ItemList";
 
 const ItemListContainer = () => {
   return (
