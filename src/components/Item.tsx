@@ -1,31 +1,28 @@
+import React from "react";
 import "../assets/styles/item.css";
 import ItemCount from "./ItemCount";
-import UrbanSymphony from "../assets/images/urban-symphony.webp";
 
-const Item = () => {
+interface ItemProps {
+  id: number;
+  name: string;
+  description: string;
+  price: number;
+  stock: number;
+  imageUrl: string;
+}
+
+const Item: React.FC<ItemProps> = ({ name, price, stock, imageUrl }) => {
   return (
     <div className="item-box">
       <div className="item">
         <div className="item-img">
-          <img src={UrbanSymphony} alt="" />
+          <img src={imageUrl} alt={name} />
         </div>
-        <div className="item-name">Urban Symphony</div>
+        <div className="item-name">{name}</div>
         <div className="item-price-actions">
-          <div className="item-price">R$79,90</div>
+          <div className="item-price">R${price}</div>
           <div className="item-actions">
-            <ItemCount initialStock={30}/>
-          </div>
-        </div>
-      </div>
-      <div className="item">
-        <div className="item-img">
-          <img src={UrbanSymphony} alt="" />
-        </div>
-        <div className="item-name">Urban Symphony</div>
-        <div className="item-price-actions">
-          <div className="item-price">R$79,90</div>
-          <div className="item-actions">
-            <ItemCount initialStock={20}/>
+            <ItemCount initialStock={stock} />
           </div>
         </div>
       </div>

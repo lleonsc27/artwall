@@ -58,7 +58,7 @@ html {
 .app-box {
   display: flex;
   flex-flow: column nowrap;
-  height: 100vh;
+  height: 100%;
 }
 
 /* :root {
