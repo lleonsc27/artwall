@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../../assets/styles/navBar.css";
 import ArtWallLogo from "../../assets/images/artwall-logo.svg";
 import { ReactComponent as CartIcon } from "../../assets/images/shopping-bag-icon.svg";
+import { Link } from "react-router-dom";
+
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +15,9 @@ const NavBar: React.FC = () => {
   return (
     <header className="header">
       <div className="logo">
+        <Link to={`/`}>
         <img className="logo-img" src={ArtWallLogo} alt="ArtWall Logo" />
+        </Link>
       </div>
 
       <div

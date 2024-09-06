@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../assets/styles/itemListContainer.css";
-import { items, ItemData } from "../data/items";
+import { items } from "../data/items";
 import ItemList from "./ItemList";
 
 const ItemListContainer: React.FC = () => {

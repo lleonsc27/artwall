@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
 import { items } from '../data/items';
+import "../assets/styles/itemDetailContainer.css"
+import Loading from './Loading';
 
 interface Item {
   id: number;
@@ -10,27 +13,30 @@ interface Item {
   imageUrl: string;
 }
 
-const getItem = (id: number): Promise<Item> => {
+const getItem = (id: number): Promise<Item | undefined> => {
   return new Promise((resolve) => {
     setTimeout(() => {
       const item = items.find(item => item.id === id);
-      if (item) resolve(item);
+      resolve(item);
     }, 2000);
   });
 };
 
-const ItemDetailContainer: React.FC<{ itemId: number }> = ({ itemId }) => {
+const ItemDetailContainer: React.FC = () => {
+  const { id } = useParams<{ id: string }>();
   const [item, setItem] = useState<Item | null>(null);
 
   useEffect(() => {
-    getItem(itemId).then((data) => {
-      setItem(data);
-    });
-  }, [itemId]);
+    if (id) {
+      getItem(Number(id)).then((data) => {
+        setItem(data || null);
+      });
+    }
+  }, [id]);
 
   return (
     <div>
-      {item ? <ItemDetail {...item} /> : <p>Carregando...</p>}
+      {item ? <ItemDetail {...item} /> : <Loading/>}
     </div>
   );
 };

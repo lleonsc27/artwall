@@ -59,36 +59,5 @@ html {
   display: flex;
   flex-flow: column nowrap;
   height: 100%;
+  width: 100%;
 }
-
-/* :root {
-  --color-primary: #F1F1F1;
-  --color-primary-50op: rgba(241, 241, 241, 0.5);
-  --color-secondary: #252525;
-  --color-tertiary: #77AC78;
-  --color-accent: #DBFF7A;
-  --ff: 'Inter', sans-serif;
-  --h1: 600 16px/20px var(--ff);
-  --h2: 600 12px/16px var(--ff);
-  --h3: 700 20px/24px var(--ff);
-  --p: 400 14px var(--ff);
-  --transition: 0.3s transform;
-  --shadow-style: rgba(0, 0, 0, 0.25);
-  --shadow: 1px 1px 5px 0px var(--shadow-style);
-  --shadow-top: 0px -1px 5px 0px var(--shadow-style);
-  --shadow-bottom: 0px 1px 5px 0px var(--shadow-style);
-  --shadow-right: 1px 0px 5px 0px var(--shadow-style);
-  --shadow-spread: 0px 0px 5px 1px var(--shadow-style);
-} */
-
-/* h1 {font: var(--h1);}
-h2 {font: var(--h2);}
-h3 {font: var(--h3);}
-p,
-pre {font: var(--p);}
-
-h1,
-h2,
-h3,
-p,
-pre {color: var(--color-secondary);} */

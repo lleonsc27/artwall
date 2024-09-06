@@ -1,0 +1,38 @@
+.loading-box {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-col);
+    gap: 16px;
+}
+
+.loading-box h1 {
+    font-family: var(--ff-prim);
+    font-weight: normal;
+}
+
+.loading {
+    width: 300px;
+    height: 4px;
+    background: linear-gradient(90deg, #afb187, #9B5E08, #afb187);
+    background-size: 800% 100%;
+    animation: gradientMotion 1.2s ease infinite;
+    margin-bottom: 32px;
+}
+
+@keyframes gradientMotion {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    50% {
+        background-position: 100% 0%;
+    }
+
+    100% {
+        background-position: 0% 0%;
+    }
+}

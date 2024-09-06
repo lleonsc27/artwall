@@ -1,0 +1,15 @@
+.item-detail-box {
+    background-color: var(--bg-col);
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+    justify-content: center;
+    align-items: center;
+}
+
+.item-detail-box img {
+    width: 30%;
+    min-width: 250px;
+    border-radius: 8px;
+}
