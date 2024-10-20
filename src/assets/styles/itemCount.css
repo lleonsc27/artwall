@@ -2,6 +2,7 @@
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
+    align-items: flex-end;
 }
 
 .button {
@@ -13,15 +14,16 @@
     border-radius: 8px;
     font-size: 24px;
     color: #673f05;
-    background-color: #f4f5dd;
+    background-color: var(--btn-p-col);
 }
 
 .button:hover {
-    background-color: #e9ead7;
+    background-color: var(--btn-hover-p-col);
 }
 
 .button:disabled {
-    color: #afb187;
+    color: var(--btn-disable-p-col);
+    background-color: var(--btn-disable-s-col);
 }
 
 .buttonAdd {
@@ -35,29 +37,45 @@
     order: 0;
 }
 
+.buttonConfirm {
+    order: 3;
+    font-family: var(--ff-prim);
+    background-color: var(--btn-s-col);
+    color: var(--text-col);
+    font-size: var(--fs-md);
+    font-weight: 400;
+    width: 176px;
+    padding: var(--sp-sm);
+    border-radius: var(--sp-sm);
+}
+
+.buttonConfirm:hover {
+    background-color: var(--btn-hover-p-col);
+}
+
 .itemsInCart {
     display: flex;
     justify-content: center;
     order: 1;
     color: #252525;
     text-align: center;
-    font-family: "Oxygen";
-    font-size: 14px;
+    font-family: var(--ff-prim);
+    font-size: var(--fs-md);
     width: 32px;
 }
 
 .stock {
-    display: flex;
-    order: 3;
+    display: none;
     color: #252525;
     text-align: center;
-    font-family: "Oxygen";
-    font-size: 14px;
+    font-family: var(--ff-prim);
+    font-size: var(--fs-md);
     font-style: normal;
     font-weight: normal;
     line-height: normal;
     justify-content: center;
     padding-top: 8px;
+    background-color: pink;
 }
 
 .add-cart {
@@ -66,7 +84,8 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    width: 96px;
-    height: 32px;
+    width: 176px;
+    height: 40px;
     background-color: #e9ead7;
+
 }

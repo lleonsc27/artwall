@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "../../assets/styles/navBar.css";
 import ArtWallLogo from "../../assets/images/artwall-logo.svg";
 import { ReactComponent as CartIcon } from "../../assets/images/shopping-bag-icon.svg";
 import { Link } from "react-router-dom";
-
+import { CartContext } from "../../context/CartContext";
 
 const NavBar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const cartContext = useContext(CartContext);
+
+  const qtyTotal = cartContext?.qtyTotal || 0;
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -16,7 +19,7 @@ const NavBar: React.FC = () => {
     <header className="header">
       <div className="logo">
         <Link to={`/`}>
-        <img className="logo-img" src={ArtWallLogo} alt="ArtWall Logo" />
+          <img className="logo-img" src={ArtWallLogo} alt="ArtWall Logo" />
         </Link>
       </div>
 
@@ -32,29 +35,29 @@ const NavBar: React.FC = () => {
       <nav className={`menu-nav ${isOpen ? "show" : ""}`}>
         <ul className="menu">
           <li>
-            <a className="item-menu" href="#home">
-              Home
-            </a>
-          </li>
-          <li>
-            <a className="item-menu" href="#produtos">
+            <Link className="item-menu" to={`/products`}>
               Produtos
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="item-menu" href="#sobre-nos">
+            <Link className="item-menu" to={`/about`}>
               Sobre Nós
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="item-menu" href="#contato">
+            <Link className="item-menu" to={`/contact`}>
               Contato
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
 
-      <CartIcon className="cart" />
+      <div>
+        <Link className="cart" to={`/cart`}>
+          <CartIcon />
+          {qtyTotal > 0 && <span className="cart-quantity">{qtyTotal}</span>}
+        </Link>
+      </div>
     </header>
   );
 };

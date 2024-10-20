@@ -114,10 +114,27 @@ a {
     width: 32px important !;
     cursor: pointer;
     padding: 0 24px;
+    position: relative;
 }
 
 .cart path {
     fill: #252525;
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40px;
+    right: 24px;
+    background-color: var(--p-light-col);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    font-family: var(--ff-prim);
+    font-size: 12px;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 768px) {}

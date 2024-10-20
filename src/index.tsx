@@ -1,15 +1,37 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Cart from "./components/Cart";
+import NavBar from "./components/NavBar";
+import ItemDetailContainer from "./containers/ItemDetailContainer";
+import ItemListContainer from "./containers/ItemListContainer";
+import { CartProvider } from "./context/CartContext";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Home from "./pages/Home";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
-root.render(<App />);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+  <React.StrictMode>
+    <CartProvider>
+      <BrowserRouter>
+        <div className="app-box">
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/products" element={<ItemListContainer />} />
+            <Route path="/categories/:categoryId" element={<ItemListContainer />} />
+            <Route path="/item/:itemId" element={<ItemDetailContainer />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </div>
+      </BrowserRouter>
+    </CartProvider>
+  </React.StrictMode>
+);

@@ -18,6 +18,12 @@
           "-webkit-tap-highlight-color"
         ]
       }
+    ],
+    "axe/forms": [
+      "default",
+      {
+        "label": "off"
+      }
     ]
   },
   "browserslist": [

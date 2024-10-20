@@ -1,17 +1,15 @@
 import React from "react";
-import "../assets/styles/item.css";
-import ItemCount from "./ItemCount";
+import "../../assets/styles/item.css";
 import { Link } from "react-router-dom";
 
 interface ItemProps {
   id: number;
   name: string;
   price: number;
-  stock: number;
   imageUrl: string;
 }
 
-const Item: React.FC<ItemProps> = ({ id, name, price, stock, imageUrl }) => {
+const Item: React.FC<ItemProps> = ({ id, name, price, imageUrl }) => {
   return (
     <div className="item-box">
       <Link to={`/item/${id}`} className="item-link">
@@ -22,9 +20,7 @@ const Item: React.FC<ItemProps> = ({ id, name, price, stock, imageUrl }) => {
           <div className="item-name">{name}</div>
           <div className="item-price-actions">
             <div className="item-price">R${price}</div>
-            <div className="item-actions">
-              <ItemCount initialStock={stock} />
-            </div>
+            <div className="item-actions"></div>
           </div>
         </div>
       </Link>
