@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import { fetchItems, Item } from "../firebase/itemService";
 import Loading from "../components/Loading";
 import ItemDetail from "../components/Item/ItemDetail";
+import "../assets/styles/itemDetailContainer.css"
 
 const ItemDetailContainer: React.FC = () => {
   const { itemId } = useParams<{ itemId: string }>();
@@ -41,7 +42,7 @@ const ItemDetailContainer: React.FC = () => {
   }
 
   return (
-    <div>
+    <div className="item-detail-container">
       {item && (
         <ItemDetail
           id={item.id}

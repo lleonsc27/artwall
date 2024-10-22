@@ -1,0 +1,77 @@
+.home-box {
+    margin-top: var(--sp-xlg);
+}
+
+h1 {
+    font-size: var(--fs-xlg);
+    color: var(--text-dark-col);
+    text-align: center;
+    margin-bottom: var(--sp-lg);
+    font-family: var(--ff-sec);
+    font-weight: lighter;
+}
+
+main {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    max-width: 1200px;
+}
+
+.produtos-destaque,
+.sobre-nos,
+.contato {
+    background-color: var(--bg-dark-col);
+    border-radius: 8px;
+    padding: var(--sp-xlg);
+    margin-bottom: var(--sp-lg);
+    box-shadow: var(--shadow-box);
+    width: 70%;
+
+}
+
+.produtos-destaque h2,
+.sobre-nos h2,
+.contato h2 {
+    font-size: var(--fs-lg);
+    color: var(--text-dark-col);
+    margin-bottom: var(--sp-md);
+    font-family: var(--ff-sec);
+    font-weight: lighter;
+}
+
+.produtos-destaque p,
+.sobre-nos p,
+.contato p {
+    font-size: var(--fs-sm);
+    color: var(--text-dark-col);
+    margin-bottom: var(--sp-md);
+}
+
+button {
+    background-color: var(--btn-p-col);
+    color: var(--text-inverse-col);
+    font-size: var(--fs-md);
+    padding: var(--sp-sm) var(--sp-md);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color var(--transition);
+}
+
+button:hover {
+    background-color: var(--btn-hover-p-col);
+}
+
+footer {
+    text-align: center;
+    /* Centraliza o texto do footer */
+    padding: var(--sp-md);
+    background-color: var(--bg-dark-col);
+    color: var(--text-dark-col);
+}
+
+footer p {
+    margin: 0;
+    /* Remove margens do parágrafo no footer */
+}

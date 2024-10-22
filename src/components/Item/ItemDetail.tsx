@@ -36,13 +36,18 @@ const ItemDetail: React.FC<ItemDetailProps> = ({
   };
 
   return (
-    <div className="item-detail-box">
-      <img src={imageUrl} alt={name} />
-      <h2>{name}</h2>
-      <p>{description}</p>
-      <p>Preço: R$ {price}</p>
-
-      <ItemCount initialStock={stock} onAdd={handleAdd} />
+    <div className="item-detail">
+      <img className="item-detail-img" src={imageUrl} alt={name} />
+      <div className="item-detail-box">
+        <div className="item-detail-info">
+          <h2>{name}</h2>
+          <p>{description}</p>
+          <p>Preço: R$ {price}</p>
+        </div>
+        <div className="item-detail-count">
+          <ItemCount initialStock={stock} onAdd={handleAdd} />
+        </div>
+      </div>
     </div>
   );
 };

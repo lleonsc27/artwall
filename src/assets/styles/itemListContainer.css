@@ -24,8 +24,9 @@
     padding: 0 8px;
     border-radius: 8px;
     cursor: pointer;
+    color: var(--text-dark-col);
 }
 
-.category-button:hover {
+.button:hover {
     color: var(--link-hover-col)
 }

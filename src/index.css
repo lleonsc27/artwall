@@ -6,6 +6,7 @@
   --p-col: #9b5e08;
   --p-light-col: #BA7B1A;
   --p-dark-col: #673F05;
+  --black-col: #252525;
 
   /* Cores Secundárias */
   --s-col: #979e1b;
@@ -22,17 +23,36 @@
   --text-dark-col: #252525;
   --text-inverse-col: #FFFFFA;
 
+  /* Cores de Ações (Botões, Links, etc.) */
+  --btn-p-col: var(--p-light-col);
+  --btn-s-col: var(--s-col);
+  --btn-hover-p-col: var(--p-col);
+  --btn-hover-s-col: var(--s-light-col);
+  --btn-active-p-col: var(--p-dark-col);
+  --btn-active-s-col: var(--s-dark-col);
+  --btn-disable-p-col: var(--s-dark-col);
+  --btn-disable-s-col: var(--s-light-col);
+  --link-col: var(--p-col);
+  --link-hover-col: var(--p-dark-col);
+
+  /* Cores de Feedback (Erro e Sucesso) */
+  --error-col: #e63946;
+  --success-col: #2a9d8f;
+
   /* Espaçamentos */
   --sp-sm: 8px;
   --sp-md: 16px;
   --sp-lg: 24px;
   --sp-xlg: 32px;
+  --sp-xxlg: 48px;
 
   /* Tamanhos de Fonte */
   --fs-sm: 0.875rem;
   --fs-md: 1rem;
   --fs-lg: 1.25rem;
   --fs-xlg: 1.5rem;
+  --fs-xxlg: 2rem;
+  --fs-body: 1rem;
 
   /* Fontes */
   --ff-prim: 'Oxygen', 'Helvetica', 'Arial', sans-serif;
@@ -42,19 +62,25 @@
   --shadow-box: 0px 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-text: 0px 1px 3px rgba(0, 0, 0, 0.2);
 
-  /* Cores de Ações (Botões, Links, etc.) */
-  --btn-p-col: var(--p-col);
-  --btn-s-col: var(--s-col);
-  --btn-hover-p-col: var(--p-light-col);
-  --btn-hover-s-col: var(--s-light-col);
-  --btn-disable-p-col: var(--s-dark-col);
-  --btn-disable-s-col: var(--s-light-col);
-  --link-col: var(--p-col);
-  --link-hover-col: var(--p-dark-col);
+  /* Z-index */
+  --z-index-header: 1000;
+  --z-index-modal: 2000;
+
+  /* Transições */
+  --transition: all 0.3s ease;
 }
 
 html {
   scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--ff-prim);
+  background-color: var(--bg-col);
+  color: var(--text-col);
+  line-height: 1.6;
 }
 
 .app-box {

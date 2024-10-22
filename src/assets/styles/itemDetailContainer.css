@@ -1,10 +1,9 @@
-.item-detal-container-box {
-    width: 100vh;
-    height: 100vh;
+.item-detail-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: pink;
+    width: 100%;
+    height: calc(100vh - 80px);
 }
 
 .error-message {

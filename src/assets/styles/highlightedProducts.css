@@ -1,0 +1,28 @@
+.highlighted-products {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.highlighted-products-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.highlighted-products-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.highlighted-products-name {
+    display: flex;
+    flex-flow: column wrap;
+    width: 20vw;
+}
+
+.highlighted-products-img {
+    width: 20vw;
+    border-radius: 8px;
+}

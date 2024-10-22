@@ -10,6 +10,7 @@ import { CartProvider } from "./context/CartContext";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import ScrollToTop from "./components/ScrollToTop";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -21,6 +22,7 @@ root.render(
       <BrowserRouter>
         <div className="app-box">
           <NavBar />
+          <ScrollToTop />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<ItemListContainer />} />

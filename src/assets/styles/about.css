@@ -1,0 +1,88 @@
+.about-page {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bg-col);
+    border-radius: 8px;
+    margin-top: var(--sp-xlg);
+}
+
+.about-page h1 {
+    font-size: var(--fs-xlg);
+    color: var(--text-dark-col);
+    text-align: center;
+    margin-bottom: var(--sp-lg);
+    font-family: var(--ff-sec);
+    font-weight: lighter;
+}
+
+.about-intro {
+    margin-bottom: var(--sp-lg);
+    width: 70%;
+}
+
+.about-intro p {
+    font-size: var(--fs-body);
+    color: var(--text-dark-col);
+    line-height: 1.8;
+}
+
+.mission-vision-values {
+    margin-bottom: var(--sp-lg);
+    width: 70%;
+
+}
+
+.mission-vision-values h2 {
+    font-size: var(--fs-lg);
+    color: var(--text-dark-col);
+    margin-bottom: var(--sp-sm);
+    font-family: var(--ff-sec);
+    font-weight: lighter;
+}
+
+.mission-vision-values p {
+    font-size: var(--fs-body);
+    color: var(--text-dark-col);
+    margin-bottom: var(--sp-md);
+}
+
+.values-ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.values-li {
+    font-size: var(--fs-body);
+    color: var(--text-dark-col);
+    margin-bottom: var(--sp-sm);
+}
+
+.contact-preview {
+    text-align: center;
+    margin-top: var(--sp-lg);
+    width: 70%;
+    margin-bottom: var(--sp-xlg);
+}
+
+.contact-preview h2 {
+    font-size: var(--fs-lg);
+    color: var(--p-col);
+    margin-bottom: var(--sp-sm);
+}
+
+.contact-preview p {
+    font-size: var(--fs-body);
+    color: var(--text-dark-col);
+}
+
+.contact-redirect {
+    color: var(--link-col);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-redirect:hover {
+    color: var(--link-hover-col);
+}

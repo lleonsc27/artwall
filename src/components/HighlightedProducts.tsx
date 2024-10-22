@@ -3,7 +3,7 @@ import { db } from "../firebase/firebase";
 import { collection, getDocs, QueryDocumentSnapshot } from "firebase/firestore";
 import { Link } from "react-router-dom";
 import Loading from "./Loading";
-import "../assets/styles/featuredProducts.css";
+import "../assets/styles/highlightedProducts.css";
 
 interface Product {
   id: string;
@@ -12,8 +12,8 @@ interface Product {
   imageUrl: string;
 }
 
-const FeaturedProducts: React.FC = () => {
-  const [products, setProducts] = useState<Product[]>([]);
+const HighlightedProducts: React.FC = () => {
+  const [highlightedProducts, setHighlightedProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -34,7 +34,7 @@ const FeaturedProducts: React.FC = () => {
           })
         ) as Product[];
 
-        setProducts(productsList.slice(0, 3));
+        setHighlightedProducts(productsList.slice(0, 3));
       } catch (error) {
         console.error("Erro ao buscar produtos: ", error);
       } finally {
@@ -48,29 +48,29 @@ const FeaturedProducts: React.FC = () => {
   if (loading) return <Loading />;
 
   return (
-    <section className="featured-products">
-      <h2>Destaques</h2>
-      <div className="featured-products-container">
-        {products.length > 0 ? (
-          products.map((product) => (
-            <div key={product.id} className="featured-product">
+    <section className="highlighted-products">
+      <h2>Produtos em Destaque</h2>
+      <div className="highlighted-products-container">
+        {highlightedProducts.length > 0 ? (
+          highlightedProducts.map((product) => (
+            <div key={product.id} className="highlighted-products-item">
               <Link to={`/item/${product.id}`}>
                 <img
-                  className="featured-item-img"
+                  className="highlighted-products-img"
                   src={product.imageUrl}
                   alt={product.name}
                 />
-                <h3>{product.name}</h3>
+                <h3 className="highlighted-products-name">{product.name}</h3>
                 <p>R$ {product.price.toFixed(2)}</p>
               </Link>
             </div>
           ))
         ) : (
-          <p>Nenhum produto destacado disponível.</p>
+          <p>Nenhum produto em destaque disponível.</p>
         )}
       </div>
     </section>
   );
 };
 
-export default FeaturedProducts;
+export default HighlightedProducts;
