@@ -42,7 +42,7 @@ const ItemDetail: React.FC<ItemDetailProps> = ({
         <div className="item-detail-info">
           <h2>{name}</h2>
           <p>{description}</p>
-          <p>Preço: R$ {price}</p>
+          <p className="item-detail-info-price">Preço: R$ {price}</p>
         </div>
         <div className="item-detail-count">
           <ItemCount initialStock={stock} onAdd={handleAdd} />

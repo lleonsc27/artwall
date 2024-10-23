@@ -3,6 +3,7 @@
     flex-flow: column nowrap;
     width: 100%;
     align-items: flex-start;
+    gap: var(--sp-sm);
 }
 
 .button {
@@ -13,9 +14,15 @@
     height: 32px;
     border-radius: 8px;
     font-size: 24px;
-    color: #673f05;
+    color: var(--p-dark-col);
     background-color: var(--btn-p-col);
 }
+
+
+button:hover {
+    background-color: var(--btn-hover-p-col);
+}
+
 
 .button:hover {
     background-color: var(--btn-hover-p-col);
@@ -39,14 +46,22 @@
 
 .buttonConfirm {
     order: 3;
-    font-family: var(--ff-prim);
+    /* font-family: var(--ff-prim);
     background-color: var(--btn-s-col);
     color: var(--text-col);
     font-size: var(--fs-md);
     font-weight: 400;
-    width: 176px;
     padding: var(--sp-sm);
-    border-radius: var(--sp-sm);
+    border-radius: var(--sp-sm); */
+    background-color: var(--btn-p-col);
+    color: var(--text-inverse-col);
+    width: 190px;
+    font-size: var(--fs-md);
+    padding: var(--sp-sm) var(--sp-md);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color var(--transition);
 }
 
 .buttonConfirm:hover {
@@ -84,8 +99,8 @@
     justify-content: space-between;
     align-items: center;
     border-radius: 8px;
-    width: 176px;
+    width: 184px;
     height: 40px;
     background-color: #e9ead7;
-
+    padding: 0 3px;
 }
