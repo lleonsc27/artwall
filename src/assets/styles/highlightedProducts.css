@@ -26,3 +26,17 @@
     width: 20vw;
     border-radius: 8px;
 }
+
+@media screen and (max-width: 700px) {
+    .highlighted-products-container {
+        flex-flow: column nowrap;
+    }
+
+    .highlighted-products-img {
+        width: 100%;
+    }
+
+    .highlighted-products-name {
+        width: 100%;
+    }
+}
