@@ -22,25 +22,47 @@ const Cart: React.FC = () => {
   };
 
   return (
-    <div>
-      <h2>Seu Carrinho</h2>
+    <div className="cart">
+      <h1>Seu Carrinho</h1>
       {cart.length === 0 ? (
         <p>O carrinho está vazio</p>
       ) : (
-        <div>
+        <div className="cart-summary">
+          <div className="cart-items-list">
+
           {cart.map((item) => (
-            <div key={item.id} className="cart-item">
-              <img className="cart-item-img" src={item.imageUrl} alt="" />
-              <p>
-                {item.name} - {item.quantity} x R$ {item.price.toFixed(2)}
-              </p>
-              <button onClick={() => removeItem(item.id)}>Remover</button>
+            <div key={item.id} className="cart-items">
+              <img
+                className="cart-item-img"
+                src={item.imageUrl}
+                alt={item.name}
+              />
+              <div className="cart-item">
+
+
+              <div className="cart-item-info">
+                <p className="cart-item-name">{item.name} </p>
+                <p className="cart-item-price">
+                  {item.quantity} x R${item.price.toFixed(2)}
+                </p>
+              </div>
+
+              <button type="button" className="cart-item-remove-button" onClick={() => removeItem(item.id)}>Remover</button>
+              </div>
             </div>
           ))}
-          <h3>Total: R$ {total.toFixed(2)}</h3>
-          <h3>Qty total: {qtyTotal}</h3>
-          <button onClick={clearCart}>Limpar Carrinho</button>
-          <button onClick={handleCheckout}>Finalizar Compra</button>
+          </div>
+          <div className="cart-checkout">
+            <div className="cart-checkout-info">
+              <h3>Preço Total:</h3>
+              <h3 className="cart-checkout-price">R$ {total.toFixed(2)}</h3>
+            </div>
+
+            <div className="cart-checkout-actions">
+              <button onClick={clearCart}>Limpar Carrinho</button>
+              <button onClick={handleCheckout}>Finalizar Compra</button>
+            </div>
+          </div>
         </div>
       )}
 

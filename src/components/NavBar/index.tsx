@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
       </nav>
 
       <div>
-        <Link className="cart" to={`/cart`}>
+        <Link className="cart-icon" to={`/cart`}>
           <CartIcon />
           {qtyTotal > 0 && <span className="cart-quantity">{qtyTotal}</span>}
         </Link>

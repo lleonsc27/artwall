@@ -105,7 +105,7 @@ a {
     color: var(--p-dark-col);
 }
 
-.cart {
+.cart-icon {
     order: 2;
     display: flex;
     justify-content: center;
@@ -117,7 +117,7 @@ a {
     position: relative;
 }
 
-.cart path {
+.cart-icon path {
     fill: var(--black-col);
 }
 
@@ -189,7 +189,7 @@ a {
         color: var(--p-dark-col);
     }
 
-    .cart {
+    .cart-icon {
         order: 2;
         width: 32px important !;
     }
