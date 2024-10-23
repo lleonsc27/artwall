@@ -9,6 +9,34 @@ h1 {
     }
 }
 
+.cart-empty {
+    background-color: var(--bg-dark-col);
+    border-radius: 8px;
+    padding: var(--sp-sm);
+    box-shadow: var(--shadow-box);
+    width: 80%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: var(--sp-sm);
+}
+
+.cart-empty p {
+    font-size: var(--fs-lg);
+    font-weight: lighter;
+}
+
+
+.products-redirect {
+    color: var(--link-col);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.products-redirect:hover {
+    color: var(--link-hover-col);
+}
+
 .cart {
     display: flex;
     flex-flow: column nowrap;
