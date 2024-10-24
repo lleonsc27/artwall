@@ -15,10 +15,14 @@ const NavBar: React.FC = () => {
     setIsOpen(!isOpen);
   };
 
+  const closeMenu = () => {
+    setIsOpen(false); // Fecha o menu quando um link é clicado
+  };
+
   return (
     <header className="header">
       <div className="logo">
-        <Link to={`/`}>
+        <Link to={`/`} onClick={closeMenu}>
           <img className="logo-img" src={ArtWallLogo} alt="ArtWall Logo" />
         </Link>
       </div>
@@ -35,17 +39,17 @@ const NavBar: React.FC = () => {
       <nav className={`menu-nav ${isOpen ? "show" : ""}`}>
         <ul className="menu">
           <li>
-            <Link className="item-menu" to={`/products`}>
+            <Link className="item-menu" to={`/products`} onClick={closeMenu}>
               Produtos
             </Link>
           </li>
           <li>
-            <Link className="item-menu" to={`/about`}>
+            <Link className="item-menu" to={`/about`} onClick={closeMenu}>
               Sobre Nós
             </Link>
           </li>
           <li>
-            <Link className="item-menu" to={`/contact`}>
+            <Link className="item-menu" to={`/contact`} onClick={closeMenu}>
               Contato
             </Link>
           </li>
@@ -53,7 +57,7 @@ const NavBar: React.FC = () => {
       </nav>
 
       <div>
-        <Link className="cart-icon" to={`/cart`}>
+        <Link className="cart-icon" to={`/cart`} onClick={closeMenu}>
           <CartIcon />
           {qtyTotal > 0 && <span className="cart-quantity">{qtyTotal}</span>}
         </Link>
