@@ -47,7 +47,7 @@ main {
     margin-bottom: var(--sp-md);
 }
 
-button {
+.home-page-button {
     background-color: var(--btn-p-col);
     color: var(--text-inverse-col);
     font-size: var(--fs-md);
@@ -58,13 +58,12 @@ button {
     transition: background-color var(--transition);
 }
 
-button:hover {
+.home-page-button:hover {
     background-color: var(--btn-hover-p-col);
 }
 
 footer {
     text-align: center;
-    /* Centraliza o texto do footer */
     padding: var(--sp-md);
     background-color: var(--bg-dark-col);
     color: var(--text-dark-col);
@@ -72,5 +71,4 @@ footer {
 
 footer p {
     margin: 0;
-    /* Remove margens do parágrafo no footer */
 }

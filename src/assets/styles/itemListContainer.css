@@ -27,6 +27,11 @@
     color: var(--text-dark-col);
 }
 
-.button:hover {
-    color: var(--link-hover-col)
+.category-button:hover {
+    color: var(--link-hover-col);
+}
+
+.category-button.active {
+    color: var(--text-inverse-col);
+    background-color: var(--btn-p-col);
 }

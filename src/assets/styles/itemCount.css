@@ -18,12 +18,6 @@
     background-color: var(--btn-p-col);
 }
 
-
-button:hover {
-    background-color: var(--btn-hover-p-col);
-}
-
-
 .button:hover {
     background-color: var(--btn-hover-p-col);
 }
@@ -46,13 +40,6 @@ button:hover {
 
 .buttonConfirm {
     order: 3;
-    /* font-family: var(--ff-prim);
-    background-color: var(--btn-s-col);
-    color: var(--text-col);
-    font-size: var(--fs-md);
-    font-weight: 400;
-    padding: var(--sp-sm);
-    border-radius: var(--sp-sm); */
     background-color: var(--btn-p-col);
     color: var(--text-inverse-col);
     width: 190px;

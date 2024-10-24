@@ -13,21 +13,21 @@ const Home: React.FC = () => {
           <section id="produtos-destaque" className="produtos-destaque">
             <HighlightedProducts />
             <Link to="/products">
-              <button type="button">Ver mais produtos</button>
+              <button className="home-page-button" type="button">Ver mais produtos</button>
             </Link>
           </section>
 
           <section id="sobre-nos" className="sobre-nos">
             <About />
             <Link to="/about">
-              <button type="button">Saiba mais</button>
+              <button className="home-page-button" type="button">Saiba mais</button>
             </Link>
           </section>
 
           <section id="contato" className="contato">
             <Contact />
             <Link to="/contact">
-              <button type="button">Entre em Contato</button>
+              <button className="home-page-button" type="button">Entre em Contato</button>
             </Link>
           </section>
         </main>
