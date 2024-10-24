@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { db } from "../firebase/firebase";
 import { collection, addDoc } from "firebase/firestore";
+import "../assets/styles/checkoutForm.css";
 
 const CheckoutForm: React.FC<{
   items: { id: number; name: string; price: number; quantity: number }[];
@@ -71,8 +72,11 @@ const CheckoutForm: React.FC<{
   };
 
   return (
-    <div>
-      <h2>Checkout</h2>
+    <div className="checkout-form">
+      <div className="checkout-form-info">
+        <h2>Checkout</h2>
+        <p>Total do Pedido: R$ {totalAmount.toFixed(2)}</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -109,12 +113,13 @@ const CheckoutForm: React.FC<{
           onChange={handleConfirmEmailChange}
           required
         />
-        <p>Total do Pedido: R$ {totalAmount.toFixed(2)}</p>
-        <button type="submit" disabled={!isFormValid}>
+        <button className="checkout-form-submit" type="submit" disabled={!isFormValid}>
           Fazer Compra
         </button>
       </form>
-      {orderId && <p>Seu pedido foi gerado! ID do pedido: {orderId}</p>}
+      <div className="checkout-form-order-id">
+        {orderId && <div><h4>Seu pedido foi gerado! 🥳</h4><h3>Código do pedido: {orderId}</h3></div>}
+      </div>
     </div>
   );
 };

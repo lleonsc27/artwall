@@ -1,0 +1,71 @@
+.checkout-form {
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: var(--bg-dark-col);
+    width: 80%;
+    padding: var(--sp-sm);
+    border-radius: 8px;
+    gap: var(--sp-md);
+    margin-bottom: var(--sp-xlg);
+}
+
+.checkout-form h2 {
+    color: var(--text-dark-col);
+    padding: 0 var(--sp-sm);
+}
+
+.checkout-form p {
+    color: var(--text-dark-col);
+    padding: 0 var(--sp-sm);
+    font-weight: lighter;
+}
+
+.checkout-form form {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: var(--sp-sm);
+    padding: 0 var(--sp-sm);
+}
+
+.checkout-form input {
+    color: var(--text-dark-col);
+    padding: 0 var(--sp-sm);
+    height: 32px;
+    border-radius: 8px;
+}
+
+.checkout-form button:disabled,
+.checkout-form button:disabled:hover {
+    background-color: var(--btn-disable-p-col);
+}
+
+.checkout-form-order-id {
+    padding: var(--sp-sm);
+}
+
+.checkout-form h4 {
+    display: flex;
+    color: var(--text-dark-col);
+    padding: 0 var(--sp-sm);
+    font-weight: lighter;
+    margin-bottom: var(--sp-sm);
+    font-size: var(--fs-lg);
+}
+
+.checkout-form h3 {
+    display: flex;
+    background-color: var(--s-col);
+    color: var(--text-dark-col);
+    border-radius: 8px;
+    padding: 0 var(--sp-sm);
+    font-weight: 400;
+    font-size: var(--fs-md);
+}
+
+.checkout-form-submit {
+    margin-top: var(--sp-sm);
+}
+
+input:focus {
+    outline: none;
+}
