@@ -61,14 +61,3 @@ main {
 .home-page-button:hover {
     background-color: var(--btn-hover-p-col);
 }
-
-footer {
-    text-align: center;
-    padding: var(--sp-md);
-    background-color: var(--bg-dark-col);
-    color: var(--text-dark-col);
-}
-
-footer p {
-    margin: 0;
-}

@@ -11,6 +11,7 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
 import ScrollToTop from "./components/ScrollToTop";
+import Footer from "./components/Footer";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -32,6 +33,7 @@ root.render(
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
           </Routes>
+          <Footer />
         </div>
       </BrowserRouter>
     </CartProvider>

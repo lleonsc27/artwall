@@ -5,7 +5,7 @@
   margin-top: var(--sp-xlg);
   margin-bottom: var(--sp-xlg);
   background-color: var(--bg-col);
-  min-height: 100vh;
+  min-height: calc(100vh - 172px);
 }
 
 .contact-page h1 {

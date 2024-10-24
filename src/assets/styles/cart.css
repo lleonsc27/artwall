@@ -1,12 +1,10 @@
 h1 {
-    h1 {
-        font-size: var(--fs-xlg);
-        color: var(--text-dark-col);
-        text-align: center;
-        margin-bottom: var(--sp-lg);
-        font-family: var(--ff-sec);
-        font-weight: lighter;
-    }
+    font-size: var(--fs-xlg);
+    color: var(--text-dark-col);
+    text-align: center;
+    margin-bottom: var(--sp-lg);
+    font-family: var(--ff-sec);
+    font-weight: lighter;
 }
 
 .cart-empty {
@@ -44,7 +42,7 @@ h1 {
     align-items: center;
     width: 100%;
     height: auto;
-    min-height: 100vh;
+    min-height: calc(100vh - 172px);
     margin-top: var(--sp-xlg);
 }
 

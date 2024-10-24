@@ -1,0 +1,12 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-dark-col);
+    color: var(--text-dark-col);
+    height: 60px;
+}
+
+footer p {
+    margin: 0;
+}

@@ -5,6 +5,7 @@
     justify-content: center;
     gap: var(--sp-md);
     padding: var(--sp-md);
+    margin-bottom: var(--sp-xlg);
 }
 
 .item {

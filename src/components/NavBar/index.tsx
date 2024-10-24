@@ -16,7 +16,7 @@ const NavBar: React.FC = () => {
   };
 
   const closeMenu = () => {
-    setIsOpen(false); // Fecha o menu quando um link é clicado
+    setIsOpen(false);
   };
 
   return (
